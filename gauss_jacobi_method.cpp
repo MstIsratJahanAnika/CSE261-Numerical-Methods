@@ -67,7 +67,7 @@ void gaussJacobi(float A[N][N], float B[N])
             x[i] = newX[i];
     }
 
-    cout<<endl<< "solution: "<< "x: "<< newX[0]<< "y: "<< newX[1]<< "z: "<< newX[2]<<endl;
+    cout<<endl<< "solution: "<< "x: "<< newX[0]<< " y: "<< newX[1]<< " z: "<< newX[2]<<endl;
 }
 
 int main()

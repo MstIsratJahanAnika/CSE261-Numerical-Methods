@@ -4,9 +4,9 @@ using namespace std;
 // to return f(x), when x is given
 float func(float x)
 {
-    // taken function is f(x) = 2x^3 - 7x + 3
+    // taken function is f(x) = x*e^(-x) - 1/8
 
-    float f = pow(x, 3)*2 - 7*x + 3;
+    float f = x * exp(-x) - 0.125;
     return f;
 }
 
@@ -54,7 +54,7 @@ int main()
 
     cout << "Enter two initial guesses: ";
 
-    // intervals can be [-3, -2] or [0, 1] or [-1, 0 ]
+    // intervals can be [-1, 1], [2, 4]
     cin >> x_1 >> x_2;
 
     secant(x_1, x_2, E);

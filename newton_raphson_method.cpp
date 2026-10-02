@@ -4,16 +4,16 @@ using namespace std;
 // error tolerance 
 #define EPSILON 0.001
 
-// function is: f(x) = x^3 - 7*x^2 + 2*x
+// function is: f(x) = sin(x) + e^(-x) - 1
 
 double func(double x){
-    return (x*x*x - 7*x*x + 2*x);
+    return (sin(x) + exp(-x) - 1);
 }
 
 // finding derivative of the function 
 double deriv_of_func(double x)
 {
-    return (3*x*x - 14*x + 2);
+    return (cos(x) - exp(-x));
 }
 
 // function to initial guess of root 
@@ -54,7 +54,7 @@ int main()
 
     cout << "Enter two initial guesses: " << endl;
     
-    // possible intevals can be [0.25, 0.5] and [6, 7]
+    // possible intevals can be [1, 3] and [2, 4]
     cin >> a >> b;
 
     c = initial_guess(a, b); // assuming a simple interval for initial guess

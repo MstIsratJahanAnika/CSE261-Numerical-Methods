@@ -5,10 +5,10 @@ using namespace std;
 #define EPSILON 0.001 //tolerance
 
 // The taken function:
-// f(x) = -3*x^2 + 3*x + 22
+// f(x) = e^x - 3*x
 double func(double x)
 {
-    return (-3*x*x + 3*x + 22);
+    return (exp(x) - 3*x);
 }
 
 // False Position Method
@@ -47,7 +47,7 @@ int main()
 {
     double a, b;
 
-    //calculated intervals are [-3, -2] and [3, 4]
+    //calculated intervals are [0, 1] and [1, 2]
     cout << "Enter two initial guesses: ";
     cin >> a >> b;
 
